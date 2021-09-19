@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9733834126F6BB7800E17FCC /* AirQualityModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733834026F6BB7800E17FCC /* AirQualityModelView.swift */; };
+		9733834326F6C1EB00E17FCC /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733834226F6C1EB00E17FCC /* Tokens.swift */; };
+		9733834526F6C27E00E17FCC /* AqiCN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733834426F6C27E00E17FCC /* AqiCN.swift */; };
+		973EBDB126F57C9E003270F0 /* Air_Quality_MonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973EBDB026F57C9E003270F0 /* Air_Quality_MonitorApp.swift */; };
+		973EBDB326F57C9E003270F0 /* AirQualityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973EBDB226F57C9E003270F0 /* AirQualityView.swift */; };
+		973EBDB526F57C9F003270F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973EBDB426F57C9F003270F0 /* Assets.xcassets */; };
+		973EBDB826F57C9F003270F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973EBDB726F57C9F003270F0 /* Preview Assets.xcassets */; };
+		973EBDC326F57C9F003270F0 /* Air_Quality_MonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973EBDC226F57C9F003270F0 /* Air_Quality_MonitorTests.swift */; };
+		973EBDCE26F57C9F003270F0 /* Air_Quality_MonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973EBDCD26F57C9F003270F0 /* Air_Quality_MonitorUITests.swift */; };
+		973EBDDC26F58314003270F0 /* OpenAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973EBDDB26F58314003270F0 /* OpenAQ.swift */; };
+		973EBDDE26F584DB003270F0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973EBDDD26F584DB003270F0 /* NetworkManager.swift */; };
+		973EBDE026F5C8B5003270F0 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973EBDDF26F5C8B5003270F0 /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		973EBDBF26F57C9F003270F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 973EBDA526F57C9E003270F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 973EBDAC26F57C9E003270F0;
+			remoteInfo = "Air Quality Monitor";
+		};
+		973EBDCA26F57C9F003270F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 973EBDA526F57C9E003270F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 973EBDAC26F57C9E003270F0;
+			remoteInfo = "Air Quality Monitor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9733834026F6BB7800E17FCC /* AirQualityModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityModelView.swift; sourceTree = "<group>"; };
+		9733834226F6C1EB00E17FCC /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
+		9733834426F6C27E00E17FCC /* AqiCN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqiCN.swift; sourceTree = "<group>"; };
+		973EBDAD26F57C9E003270F0 /* Air Quality Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Air Quality Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		973EBDB026F57C9E003270F0 /* Air_Quality_MonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Air_Quality_MonitorApp.swift; sourceTree = "<group>"; };
+		973EBDB226F57C9E003270F0 /* AirQualityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityView.swift; sourceTree = "<group>"; };
+		973EBDB426F57C9F003270F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		973EBDB726F57C9F003270F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		973EBDB926F57C9F003270F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		973EBDBE26F57C9F003270F0 /* Air Quality MonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Air Quality MonitorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		973EBDC226F57C9F003270F0 /* Air_Quality_MonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Air_Quality_MonitorTests.swift; sourceTree = "<group>"; };
+		973EBDC426F57C9F003270F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		973EBDC926F57C9F003270F0 /* Air Quality MonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Air Quality MonitorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		973EBDCD26F57C9F003270F0 /* Air_Quality_MonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Air_Quality_MonitorUITests.swift; sourceTree = "<group>"; };
+		973EBDCF26F57C9F003270F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		973EBDDB26F58314003270F0 /* OpenAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAQ.swift; sourceTree = "<group>"; };
+		973EBDDD26F584DB003270F0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		973EBDDF26F5C8B5003270F0 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		973EBDAA26F57C9E003270F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973EBDBB26F57C9F003270F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973EBDC626F57C9F003270F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9733833D26F6BB3D00E17FCC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				973EBDB226F57C9E003270F0 /* AirQualityView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9733833E26F6BB4600E17FCC /* ModelViews */ = {
+			isa = PBXGroup;
+			children = (
+				9733834026F6BB7800E17FCC /* AirQualityModelView.swift */,
+			);
+			path = ModelViews;
+			sourceTree = "<group>";
+		};
+		9733833F26F6BB4C00E17FCC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				973EBDDF26F5C8B5003270F0 /* LocationManager.swift */,
+				973EBDDD26F584DB003270F0 /* NetworkManager.swift */,
+				973EBDDB26F58314003270F0 /* OpenAQ.swift */,
+				9733834426F6C27E00E17FCC /* AqiCN.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		973EBDA426F57C9E003270F0 = {
+			isa = PBXGroup;
+			children = (
+				973EBDAF26F57C9E003270F0 /* Air Quality Monitor */,
+				973EBDC126F57C9F003270F0 /* Air Quality MonitorTests */,
+				973EBDCC26F57C9F003270F0 /* Air Quality MonitorUITests */,
+				973EBDAE26F57C9E003270F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		973EBDAE26F57C9E003270F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				973EBDAD26F57C9E003270F0 /* Air Quality Monitor.app */,
+				973EBDBE26F57C9F003270F0 /* Air Quality MonitorTests.xctest */,
+				973EBDC926F57C9F003270F0 /* Air Quality MonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		973EBDAF26F57C9E003270F0 /* Air Quality Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				973EBDB026F57C9E003270F0 /* Air_Quality_MonitorApp.swift */,
+				9733833F26F6BB4C00E17FCC /* Models */,
+				9733833E26F6BB4600E17FCC /* ModelViews */,
+				9733833D26F6BB3D00E17FCC /* Views */,
+				973EBDB426F57C9F003270F0 /* Assets.xcassets */,
+				973EBDB926F57C9F003270F0 /* Info.plist */,
+				973EBDB626F57C9F003270F0 /* Preview Content */,
+				9733834226F6C1EB00E17FCC /* Tokens.swift */,
+			);
+			path = "Air Quality Monitor";
+			sourceTree = "<group>";
+		};
+		973EBDB626F57C9F003270F0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				973EBDB726F57C9F003270F0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		973EBDC126F57C9F003270F0 /* Air Quality MonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				973EBDC226F57C9F003270F0 /* Air_Quality_MonitorTests.swift */,
+				973EBDC426F57C9F003270F0 /* Info.plist */,
+			);
+			path = "Air Quality MonitorTests";
+			sourceTree = "<group>";
+		};
+		973EBDCC26F57C9F003270F0 /* Air Quality MonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				973EBDCD26F57C9F003270F0 /* Air_Quality_MonitorUITests.swift */,
+				973EBDCF26F57C9F003270F0 /* Info.plist */,
+			);
+			path = "Air Quality MonitorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		973EBDAC26F57C9E003270F0 /* Air Quality Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 973EBDD226F57C9F003270F0 /* Build configuration list for PBXNativeTarget "Air Quality Monitor" */;
+			buildPhases = (
+				973EBDA926F57C9E003270F0 /* Sources */,
+				973EBDAA26F57C9E003270F0 /* Frameworks */,
+				973EBDAB26F57C9E003270F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Air Quality Monitor";
+			productName = "Air Quality Monitor";
+			productReference = 973EBDAD26F57C9E003270F0 /* Air Quality Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		973EBDBD26F57C9F003270F0 /* Air Quality MonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 973EBDD526F57C9F003270F0 /* Build configuration list for PBXNativeTarget "Air Quality MonitorTests" */;
+			buildPhases = (
+				973EBDBA26F57C9F003270F0 /* Sources */,
+				973EBDBB26F57C9F003270F0 /* Frameworks */,
+				973EBDBC26F57C9F003270F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				973EBDC026F57C9F003270F0 /* PBXTargetDependency */,
+			);
+			name = "Air Quality MonitorTests";
+			productName = "Air Quality MonitorTests";
+			productReference = 973EBDBE26F57C9F003270F0 /* Air Quality MonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		973EBDC826F57C9F003270F0 /* Air Quality MonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 973EBDD826F57C9F003270F0 /* Build configuration list for PBXNativeTarget "Air Quality MonitorUITests" */;
+			buildPhases = (
+				973EBDC526F57C9F003270F0 /* Sources */,
+				973EBDC626F57C9F003270F0 /* Frameworks */,
+				973EBDC726F57C9F003270F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				973EBDCB26F57C9F003270F0 /* PBXTargetDependency */,
+			);
+			name = "Air Quality MonitorUITests";
+			productName = "Air Quality MonitorUITests";
+			productReference = 973EBDC926F57C9F003270F0 /* Air Quality MonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		973EBDA526F57C9E003270F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					973EBDAC26F57C9E003270F0 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					973EBDBD26F57C9F003270F0 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 973EBDAC26F57C9E003270F0;
+					};
+					973EBDC826F57C9F003270F0 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 973EBDAC26F57C9E003270F0;
+					};
+				};
+			};
+			buildConfigurationList = 973EBDA826F57C9E003270F0 /* Build configuration list for PBXProject "Air Quality Monitor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 973EBDA426F57C9E003270F0;
+			productRefGroup = 973EBDAE26F57C9E003270F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				973EBDAC26F57C9E003270F0 /* Air Quality Monitor */,
+				973EBDBD26F57C9F003270F0 /* Air Quality MonitorTests */,
+				973EBDC826F57C9F003270F0 /* Air Quality MonitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		973EBDAB26F57C9E003270F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				973EBDB826F57C9F003270F0 /* Preview Assets.xcassets in Resources */,
+				973EBDB526F57C9F003270F0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973EBDBC26F57C9F003270F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973EBDC726F57C9F003270F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		973EBDA926F57C9E003270F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				973EBDDE26F584DB003270F0 /* NetworkManager.swift in Sources */,
+				973EBDDC26F58314003270F0 /* OpenAQ.swift in Sources */,
+				9733834526F6C27E00E17FCC /* AqiCN.swift in Sources */,
+				973EBDE026F5C8B5003270F0 /* LocationManager.swift in Sources */,
+				9733834126F6BB7800E17FCC /* AirQualityModelView.swift in Sources */,
+				973EBDB326F57C9E003270F0 /* AirQualityView.swift in Sources */,
+				973EBDB126F57C9E003270F0 /* Air_Quality_MonitorApp.swift in Sources */,
+				9733834326F6C1EB00E17FCC /* Tokens.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973EBDBA26F57C9F003270F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				973EBDC326F57C9F003270F0 /* Air_Quality_MonitorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973EBDC526F57C9F003270F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				973EBDCE26F57C9F003270F0 /* Air_Quality_MonitorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		973EBDC026F57C9F003270F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 973EBDAC26F57C9E003270F0 /* Air Quality Monitor */;
+			targetProxy = 973EBDBF26F57C9F003270F0 /* PBXContainerItemProxy */;
+		};
+		973EBDCB26F57C9F003270F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 973EBDAC26F57C9E003270F0 /* Air Quality Monitor */;
+			targetProxy = 973EBDCA26F57C9F003270F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		973EBDD026F57C9F003270F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		973EBDD126F57C9F003270F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		973EBDD326F57C9F003270F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Air Quality Monitor/Preview Content\"";
+				DEVELOPMENT_TEAM = PL89YQEG87;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Air Quality Monitor/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffrey-thompson.Air-Quality-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		973EBDD426F57C9F003270F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Air Quality Monitor/Preview Content\"";
+				DEVELOPMENT_TEAM = PL89YQEG87;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Air Quality Monitor/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffrey-thompson.Air-Quality-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		973EBDD626F57C9F003270F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PL89YQEG87;
+				INFOPLIST_FILE = "Air Quality MonitorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffrey-thompson.Air-Quality-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Air Quality Monitor.app/Air Quality Monitor";
+			};
+			name = Debug;
+		};
+		973EBDD726F57C9F003270F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PL89YQEG87;
+				INFOPLIST_FILE = "Air Quality MonitorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffrey-thompson.Air-Quality-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Air Quality Monitor.app/Air Quality Monitor";
+			};
+			name = Release;
+		};
+		973EBDD926F57C9F003270F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PL89YQEG87;
+				INFOPLIST_FILE = "Air Quality MonitorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffrey-thompson.Air-Quality-MonitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Air Quality Monitor";
+			};
+			name = Debug;
+		};
+		973EBDDA26F57C9F003270F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PL89YQEG87;
+				INFOPLIST_FILE = "Air Quality MonitorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffrey-thompson.Air-Quality-MonitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Air Quality Monitor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		973EBDA826F57C9E003270F0 /* Build configuration list for PBXProject "Air Quality Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973EBDD026F57C9F003270F0 /* Debug */,
+				973EBDD126F57C9F003270F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		973EBDD226F57C9F003270F0 /* Build configuration list for PBXNativeTarget "Air Quality Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973EBDD326F57C9F003270F0 /* Debug */,
+				973EBDD426F57C9F003270F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		973EBDD526F57C9F003270F0 /* Build configuration list for PBXNativeTarget "Air Quality MonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973EBDD626F57C9F003270F0 /* Debug */,
+				973EBDD726F57C9F003270F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		973EBDD826F57C9F003270F0 /* Build configuration list for PBXNativeTarget "Air Quality MonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973EBDD926F57C9F003270F0 /* Debug */,
+				973EBDDA26F57C9F003270F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 973EBDA526F57C9E003270F0 /* Project object */;
+}
