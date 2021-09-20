@@ -11,7 +11,7 @@ import SwiftUI
 struct Air_Quality_MonitorApp: App {
     var body: some Scene {
         WindowGroup {
-            AirQualityView()
+            AirQualityView(airQualityModelView: AirQualityModelView())
         }
     }
 }

@@ -8,7 +8,138 @@
 import Foundation
 
 struct AqiCNMeasurements: Codable {
+    let status: String?
+    let data: AqiData?
     
+    var tomorrowForecast: Int {
+        data?.forecast?.daily?.tomorrowForecast ?? -1
+    }
+}
+
+
+struct AqiData: Codable {
+    // commented out available from API but not used in app
+    let aqi: Int?
+    //let idx: Int?
+    let attributions: [AqiAttribution]?
+    let city: AqiCity?
+    //let dominentpol: String?
+    //let iaqi: Aqiiaqi?
+    let forecast: AqiForecast?
+}
+
+struct AqiForecast: Codable {
+    let daily: AqiDailyForecast?
+}
+
+struct AqiDailyForecast: Codable {
+    let o3: [AqiForecastData?]
+    let pm25: [AqiForecastData?]
+    let pm10: [AqiForecastData?]
+    let uvi: [AqiForecastData?]
+    
+    var tomorrowForecast: Int {
+        guard let maxVal = [tomorrowO3Aqi,tomorrowPm10Aqi,tomorrowPm25Aqi].sorted(by: { $0.value > $1.value }).first else { return -1 }
+        return maxVal.value
+    }
+    
+    var todayUviAqi: (name: String, value: Int) { getTodayAqi(for: "uvi")}
+    var todayPm10Aqi: (name: String, value: Int) { getTodayAqi(for: "pm10")}
+    var todayPm25Aqi: (name: String, value: Int) { getTodayAqi(for: "pm25")}
+    var todayO3Aqi: (name: String, value: Int) { getTodayAqi(for: "o3")}
+    
+    var tomorrowUviAqi: (name: String, value: Int) { getTomorrowAqi(for: "uvi")}
+    var tomorrowPm10Aqi: (name: String, value: Int) { getTomorrowAqi(for: "pm10")}
+    var tomorrowPm25Aqi: (name: String, value: Int) { getTomorrowAqi(for: "pm25")}
+    var tomorrowO3Aqi: (name: String, value: Int) { getTomorrowAqi(for: "o3")}
+    
+    private func getTodayAqi(for pollutant: String) -> (name: String, value: Int) {
+        let pollutantData: Dictionary<String,[AqiForecastData?]> = [
+            "o3":o3,
+            "pm25":pm25,
+            "pm10":pm10,
+            "uvi":uvi
+        ]
+        
+        guard let forecastData = pollutantData[pollutant] else { return (name: pollutant, value: -1) }
+        
+        guard let tomorrowData = forecastData.compactMap({ value -> AqiForecastData? in
+            
+            if let date = value?.date {
+                return Calendar(identifier: .gregorian).isDateInToday(date) ? value : nil
+            }
+            return nil
+        }).first else { return (name: pollutant, value: -1) }
+        
+        guard let min = tomorrowData.min, let max = tomorrowData.max, let avg = tomorrowData.avg else { return (name: pollutant, value: -1) }
+        return EPAData.getAqi(for: pollutant, min: .ppb(min), max: .ppb(max), avg: .ppb(avg))
+    }
+    
+    private func getTomorrowAqi(for pollutant: String) -> (name: String, value: Int) {
+        let pollutantData: Dictionary<String,[AqiForecastData?]> = [
+            "o3":o3,
+            "pm25":pm25,
+            "pm10":pm10,
+            "uvi":uvi
+        ]
+        
+        guard let forecastData = pollutantData[pollutant] else { return (name: pollutant, value: -1) }
+        
+        guard let tomorrowData = forecastData.compactMap({ value -> AqiForecastData? in
+            
+            if let date = value?.date {
+                return Calendar(identifier: .gregorian).isDateInTomorrow(date) ? value : nil
+            }
+            return nil
+        }).first else { return (name: pollutant, value: -1) }
+        
+        guard let min = tomorrowData.min, let max = tomorrowData.max, let avg = tomorrowData.avg else { return (name: pollutant, value: -1) }
+        //return EPAData.getAqi(for: pollutant, min: min, max: max, avg: avg, convertPPBtoPPM: true)
+        return EPAData.getAqi(for: pollutant, min: .ppb(min), max: .ppb(max), avg: .ppb(avg))
+    }
+}
+
+struct AqiForecastData: Codable {
+    let avg: Int?
+    let day: String?
+    let max: Int?
+    let min: Int?
+    
+    var date: Date? {
+        guard let dateString = day else { return nil }
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY-MM-dd"
+        dateFormatter.locale = .current
+        return dateFormatter.date(from: dateString)
+    }
+}
+
+struct Aqiiaqi: Codable {
+    let co: AqiValue?
+    let h: AqiValue?
+    let no2: AqiValue?
+    let o3: AqiValue?
+    let p: AqiValue?
+    let pm10: AqiValue?
+    let pm25: AqiValue?
+    let so2: AqiValue?
+    let t: AqiValue?
+    let w: AqiValue?
+}
+
+struct AqiValue: Codable {
+    let v: Double?
+}
+
+struct AqiAttribution: Codable {
+    let url: String?
+    let name: String?
+}
+
+struct AqiCity: Codable {
+    let geo: [Double]?
+    let name: String?
+    let url: String?
 }
 
 

@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9733834126F6BB7800E17FCC /* AirQualityModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733834026F6BB7800E17FCC /* AirQualityModelView.swift */; };
-		9733834326F6C1EB00E17FCC /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733834226F6C1EB00E17FCC /* Tokens.swift */; };
+		9733834326F6C1EB00E17FCC /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733834226F6C1EB00E17FCC /* NetworkConfig.swift */; };
 		9733834526F6C27E00E17FCC /* AqiCN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733834426F6C27E00E17FCC /* AqiCN.swift */; };
+		9733834A26F7E6E000E17FCC /* EPAData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733834926F7E6E000E17FCC /* EPAData.swift */; };
+		9733834C26F832B600E17FCC /* IntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733834B26F832B600E17FCC /* IntegrationTests.swift */; };
+		9733834E26F8429100E17FCC /* WaitSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733834D26F8429100E17FCC /* WaitSpinner.swift */; };
 		973EBDB126F57C9E003270F0 /* Air_Quality_MonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973EBDB026F57C9E003270F0 /* Air_Quality_MonitorApp.swift */; };
 		973EBDB326F57C9E003270F0 /* AirQualityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973EBDB226F57C9E003270F0 /* AirQualityView.swift */; };
 		973EBDB526F57C9F003270F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973EBDB426F57C9F003270F0 /* Assets.xcassets */; };
@@ -18,7 +21,6 @@
 		973EBDCE26F57C9F003270F0 /* Air_Quality_MonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973EBDCD26F57C9F003270F0 /* Air_Quality_MonitorUITests.swift */; };
 		973EBDDC26F58314003270F0 /* OpenAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973EBDDB26F58314003270F0 /* OpenAQ.swift */; };
 		973EBDDE26F584DB003270F0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973EBDDD26F584DB003270F0 /* NetworkManager.swift */; };
-		973EBDE026F5C8B5003270F0 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973EBDDF26F5C8B5003270F0 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +42,11 @@
 
 /* Begin PBXFileReference section */
 		9733834026F6BB7800E17FCC /* AirQualityModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityModelView.swift; sourceTree = "<group>"; };
-		9733834226F6C1EB00E17FCC /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
+		9733834226F6C1EB00E17FCC /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		9733834426F6C27E00E17FCC /* AqiCN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqiCN.swift; sourceTree = "<group>"; };
+		9733834926F7E6E000E17FCC /* EPAData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPAData.swift; sourceTree = "<group>"; };
+		9733834B26F832B600E17FCC /* IntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationTests.swift; sourceTree = "<group>"; };
+		9733834D26F8429100E17FCC /* WaitSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitSpinner.swift; sourceTree = "<group>"; };
 		973EBDAD26F57C9E003270F0 /* Air Quality Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Air Quality Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		973EBDB026F57C9E003270F0 /* Air_Quality_MonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Air_Quality_MonitorApp.swift; sourceTree = "<group>"; };
 		973EBDB226F57C9E003270F0 /* AirQualityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityView.swift; sourceTree = "<group>"; };
@@ -56,7 +61,6 @@
 		973EBDCF26F57C9F003270F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		973EBDDB26F58314003270F0 /* OpenAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAQ.swift; sourceTree = "<group>"; };
 		973EBDDD26F584DB003270F0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		973EBDDF26F5C8B5003270F0 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				973EBDB226F57C9E003270F0 /* AirQualityView.swift */,
+				9733834D26F8429100E17FCC /* WaitSpinner.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,10 +108,11 @@
 		9733833F26F6BB4C00E17FCC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				973EBDDF26F5C8B5003270F0 /* LocationManager.swift */,
+				9733834226F6C1EB00E17FCC /* NetworkConfig.swift */,
 				973EBDDD26F584DB003270F0 /* NetworkManager.swift */,
 				973EBDDB26F58314003270F0 /* OpenAQ.swift */,
 				9733834426F6C27E00E17FCC /* AqiCN.swift */,
+				9733834926F7E6E000E17FCC /* EPAData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -141,7 +147,6 @@
 				973EBDB426F57C9F003270F0 /* Assets.xcassets */,
 				973EBDB926F57C9F003270F0 /* Info.plist */,
 				973EBDB626F57C9F003270F0 /* Preview Content */,
-				9733834226F6C1EB00E17FCC /* Tokens.swift */,
 			);
 			path = "Air Quality Monitor";
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 		973EBDC126F57C9F003270F0 /* Air Quality MonitorTests */ = {
 			isa = PBXGroup;
 			children = (
+				9733834B26F832B600E17FCC /* IntegrationTests.swift */,
 				973EBDC226F57C9F003270F0 /* Air_Quality_MonitorTests.swift */,
 				973EBDC426F57C9F003270F0 /* Info.plist */,
 			);
@@ -304,11 +310,12 @@
 				973EBDDE26F584DB003270F0 /* NetworkManager.swift in Sources */,
 				973EBDDC26F58314003270F0 /* OpenAQ.swift in Sources */,
 				9733834526F6C27E00E17FCC /* AqiCN.swift in Sources */,
-				973EBDE026F5C8B5003270F0 /* LocationManager.swift in Sources */,
 				9733834126F6BB7800E17FCC /* AirQualityModelView.swift in Sources */,
+				9733834A26F7E6E000E17FCC /* EPAData.swift in Sources */,
 				973EBDB326F57C9E003270F0 /* AirQualityView.swift in Sources */,
 				973EBDB126F57C9E003270F0 /* Air_Quality_MonitorApp.swift in Sources */,
-				9733834326F6C1EB00E17FCC /* Tokens.swift in Sources */,
+				9733834E26F8429100E17FCC /* WaitSpinner.swift in Sources */,
+				9733834326F6C1EB00E17FCC /* NetworkConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9733834C26F832B600E17FCC /* IntegrationTests.swift in Sources */,
 				973EBDC326F57C9F003270F0 /* Air_Quality_MonitorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
